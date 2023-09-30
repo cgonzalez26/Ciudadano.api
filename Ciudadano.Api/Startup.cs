@@ -67,7 +67,7 @@ namespace Ciudadano.Api
 
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Base API .Net Core", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Ciudadano API .Net Core", Version = "v1" });
                 c.CustomSchemaIds(i => i.FullName);
             });
         }
@@ -87,7 +87,7 @@ namespace Ciudadano.Api
             // specifying the Swagger JSON endpoint.
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Base API .Net Core V1");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Ciudadano API .Net Core V1");
             });
 
             app.UseHttpsRedirection();
